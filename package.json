@@ -1,0 +1,46 @@
+{
+  "name": "vee-validate-laravel-extended",
+  "version": "1.0.0",
+  "description": "Extension of vee-validate to support Laravel validations",
+  "unpkg": "dist/vee-validate-laravel-extended.js",
+  "main": "dist/vee-validate-laravel-extended.js",
+  "scripts": {
+    "build": "yarn rollup -c",
+    "eslint": "eslint src/**",
+    "deploy": "yarn eslint && yarn build && npm publish",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/williamcruzme/vee-validate-laravel-extended.git"
+  },
+  "keywords": [
+    "Laravel",
+    "VeeValidate"
+  ],
+  "author": "John Cruz <sv.johncruz@gmail.com>",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "bugs": {
+    "url": "https://github.com/williamcruzme/vee-validate-laravel-extended/issues"
+  },
+  "homepage": "https://github.com/williamcruzme/vee-validate-laravel-extended#readme",
+  "peerDependencies": {
+    "vue": "^2.0.0",
+    "vee-validate": "^2.1.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.17.3",
+    "rollup": "^1.15.6",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-node-resolve": "^5.0.3",
+    "rollup-plugin-uglify": "^6.0.2"
+  }
+}
